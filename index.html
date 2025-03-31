@@ -148,11 +148,20 @@
             text-align: center;
         }
 
+        .platforms h2 {
+            font-size: 3em;
+            margin-bottom: 40px;
+            color: white;
+        }
+
         .platform-banner {
             background-color: black;
             display: inline-block;
             padding: 20px 50px;
             border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .platform-banner img {
@@ -161,19 +170,19 @@
             height: 40px;
         }
 
-        .platforms h2 {
-            font-size: 3em;
-            margin-bottom: 40px;
-            color: white;
-        }
-
-        footer {
+        .footer {
             margin-top: 60px;
             padding: 20px;
             background: #1A1A1A;
             color: #bbb;
             font-size: 0.9em;
             width: 100%;
+        }
+
+        .platforms h2 span {
+            display: block;
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -207,13 +216,13 @@
     </section>
 
     <section class="platforms">
+        <h2><span>Plataforma</span>Parceiras</h2>
         <div class="platform-banner">
-            <h2>Plataformas Parceiras</h2>
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Roblox_Logo_2022.svg" alt="Roblox">
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 Starled Studios. Todos os direitos reservados.</p>
     </footer>
 
