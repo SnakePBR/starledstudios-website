@@ -19,7 +19,6 @@
             text-align: center;
             overflow-x: hidden;
             max-width: 100vw;
-            transition: background-color 0.3s ease-in-out;
         }
 
         .header {
@@ -27,20 +26,16 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 5%;
-            position: absolute;
-            width: 90%;
+            position: fixed;
             top: 0;
             left: 0;
-            z-index: 10;
+            width: 100%;
+            z-index: 999;
+            transition: all 0.3s;
         }
 
         .logo {
             width: 150px;
-            transition: transform 0.3s;
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
         }
 
         .menu {
@@ -53,11 +48,12 @@
             text-decoration: none;
             font-size: 1.2em;
             font-weight: 400;
-            transition: opacity 0.3s;
+            transition: 0.3s;
         }
 
         .menu a:hover {
             opacity: 0.7;
+            text-transform: uppercase;
         }
 
         .hero {
@@ -70,46 +66,35 @@
             padding: 0 10%;
             width: 100%;
             position: relative;
-            animation: fadeIn 2s ease-out;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+            overflow: hidden;
         }
 
         .hero-text {
             max-width: 600px;
-            opacity: 0;
-            animation: slideUp 1.5s forwards;
-        }
-
-        @keyframes slideUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
+            z-index: 2;
         }
 
         .hero-text h1 {
             font-size: 4em;
             font-weight: 600;
             margin-bottom: 10px;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .hero-text p {
             font-size: 1.4em;
             color: #ddd;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         .platforms {
             padding: 60px 5%;
             text-align: center;
-            opacity: 0;
-            animation: fadeInUp 2s forwards;
-        }
-
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
         }
 
         .platform-banner {
@@ -120,6 +105,7 @@
             padding: 20px 50px;
             border-radius: 10px;
             gap: 15px;
+            transition: transform 0.3s ease;
         }
 
         .platform-banner img {
@@ -132,6 +118,10 @@
             color: white;
         }
 
+        .platform-banner:hover {
+            transform: scale(1.05);
+        }
+
         .portfolio {
             padding: 80px 5%;
             text-align: center;
@@ -141,6 +131,8 @@
         .portfolio h2 {
             font-size: 3em;
             margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .games {
@@ -148,8 +140,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 30px;
-            opacity: 0;
-            animation: fadeInUp 2s forwards;
+            margin-top: 40px;
         }
 
         .game-card {
@@ -158,17 +149,19 @@
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s ease;
             box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
         }
 
         .game-card:hover {
             transform: scale(1.05);
+            box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
         }
 
         .game-card img {
             width: 100%;
             border-radius: 10px;
+            transition: transform 0.3s ease;
         }
 
         .game-card h3 {
@@ -190,11 +183,12 @@
             text-decoration: none;
             border-radius: 8px;
             font-size: 1em;
-            transition: background-color 0.3s;
+            transition: 0.3s;
         }
 
         .game-card a:hover {
-            background-color: #ff4b2b;
+            opacity: 0.85;
+            transform: translateY(-5px);
         }
 
         footer {
@@ -204,11 +198,10 @@
             color: #bbb;
             font-size: 0.9em;
             width: 100%;
-            text-align: center;
         }
 
         .contact {
-            position: absolute;
+            position: fixed;
             top: 20px;
             right: 20px;
             background-color: #1A1A1A;
@@ -216,6 +209,7 @@
             border-radius: 50%;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
             transition: 0.3s;
+            z-index: 100;
         }
 
         .contact img {
@@ -225,6 +219,7 @@
 
         .contact:hover {
             opacity: 0.8;
+            transform: scale(1.1);
         }
     </style>
 </head>
