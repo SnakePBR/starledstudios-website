@@ -145,6 +145,7 @@
         .platforms {
             padding: 80px 5%;
             background-color: #1A1A1A;
+            text-align: center;
         }
 
         .platforms h2 {
@@ -153,15 +154,32 @@
             color: white;
         }
 
-        .platforms .platform-item {
+        .platform-item {
             display: inline-block;
-            margin: 0 40px;
+            position: relative;
+            margin: 0 30px;
             text-align: center;
+            transition: transform 0.3s;
         }
 
-        .platforms .platform-item img {
-            width: 150px;
+        .platform-item:hover {
+            transform: scale(1.1);
+        }
+
+        .platform-item img {
+            width: 200px;
             margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .platform-item img:hover {
+            transform: scale(1.2);
+        }
+
+        .platform-item p {
+            font-size: 1.2em;
+            color: white;
+            font-weight: 500;
         }
 
         footer {
@@ -204,7 +222,7 @@
     </section>
 
     <section class="platforms">
-        <h2>Plataforma em que Trabalhamos</h2>
+        <h2>Plataformas Parceiras</h2>
         <div class="platform-item">
             <img src="https://cdn.prod.website-files.com/66d5d0b5c396cb4aa3d8f820/66de1c032bd368e43720c890_Roblox%20White.png" alt="Roblox Logo">
             <p>Roblox</p>
