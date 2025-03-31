@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,18 @@
             text-align: center; 
             background-color: #0D0D0D; 
             color: white; 
+            margin: 0;
+            padding: 0;
         }
-        .logo { width: 300px; margin-top: 50px; }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo { 
+            width: 300px; 
+            margin-top: 50px; 
+        }
         .btn {
             display: inline-block;
             padding: 15px 30px;
@@ -22,60 +32,63 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        /* Estilizando o portfólio */
+        #portfolio {
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+        .game {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #1E1E1E;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+        .game img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .game h3 {
+            margin-top: 10px;
+        }
+        .game p {
+            font-size: 18px;
+            color: #ddd;
+        }
+        .game a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .game a:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <img src="https://github.com/SnakePBR/starledstudios-website/blob/main/Projeto_Criador_de_logotipo_3.png?raw=true" alt="Starled Studios Logo" class="logo">
-    <h1>Bem-vindo à Starled Studios</h1>
-    <p>Desenvolvemos jogos incríveis no Roblox!</p>
-    <a href="https://discord.com/users/starledstudios" class="btn">Fale Conosco no Discord</a>
+    <div class="container">
+        <img src="https://github.com/SnakePBR/starledstudios-website/blob/main/Projeto_Criador_de_logotipo_3.png?raw=true" alt="Starled Studios Logo" class="logo">
+        <h1>Bem-vindo à Starled Studios</h1>
+        <p>Desenvolvemos jogos incríveis no Roblox!</p>
+        <a href="https://discord.com/users/starledstudios" class="btn">Fale Conosco no Discord</a>
+    </div>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+        <h2>Nosso Portfólio</h2>
+        <div class="game">
+            <img src="https://github.com/SnakePBR/starledstudios-website/blob/main/1714308831897%20(1).png?raw=true" alt="EB - Exército Brasileiro">
+            <h3>EB - Exército Brasileiro</h3>
+            <p>Visitas: 1 Bilhão+</p>
+            <a href="https://www.roblox.com/pt/games/127121345254769/EB-Ex-rcito-Brasileiro" target="_blank">Jogar Agora</a>
+        </div>
+    </section>
 </body>
 </html>
-
-<section id="portfolio">
-    <h2>Nosso Portfólio</h2>
-    <div class="game">
-        <img src="https://github.com/SnakePBR/starledstudios-website/blob/main/1714308831897%20(1).png?raw=true" alt="EB - Exército Brasileiro">
-        <h3>EB - Exército Brasileiro</h3>
-        <p>Visitas: 1 Bilhão+</p>
-        <a href="https://www.roblox.com/pt/games/127121345254769/EB-Ex-rcito-Brasileiro" target="_blank">Jogar Agora</a>
-    </div>
-</section>
-
-<style>
-    #portfolio {
-        text-align: center;
-        padding: 50px 20px;
-    }
-    .game {
-        display: inline-block;
-        width: 300px;
-        margin: 20px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .game img {
-        width: 100%;
-        border-radius: 10px;
-    }
-    .game h3 {
-        margin-top: 10px;
-    }
-    .game p {
-        font-size: 18px;
-        color: #666;
-    }
-    .game a {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 10px;
-        background: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    .game a:hover {
-        background: #0056b3;
-    }
-</style>
