@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Game Platform</title>
+    <title>Portfólio de Jogos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #4A90E2, #1A1A1A); /* Azul suave com preto */
+            background-color: #1A1A1A;
             color: white;
             text-align: center;
             overflow-x: hidden;
@@ -33,7 +33,7 @@
             width: 100%;
             z-index: 999;
             transition: all 0.3s;
-            background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para combinar com a logo */
+            background-color: rgba(0, 0, 0, 0.6);
         }
 
         .logo {
@@ -46,7 +46,7 @@
         }
 
         .menu a {
-            color: #4A90E2; /* Azul para links */
+            color: #4A90E2; 
             text-decoration: none;
             font-size: 1.2em;
             font-weight: 400;
@@ -56,7 +56,7 @@
         .menu a:hover {
             opacity: 0.7;
             text-transform: uppercase;
-            color: #fff; /* Branco ao passar o mouse */
+            color: #fff; 
         }
 
         .hero {
@@ -81,7 +81,7 @@
             font-size: 4em;
             font-weight: 600;
             margin-bottom: 10px;
-            color: #4A90E2; /* Azul no título */
+            color: #4A90E2;
             animation: fadeIn 1s ease-in-out;
         }
 
@@ -96,36 +96,6 @@
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        .platforms {
-            padding: 60px 5%;
-            text-align: center;
-        }
-
-        .platform-banner {
-            background-color: #1A1A1A;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 50px;
-            border-radius: 10px;
-            gap: 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .platform-banner img {
-            height: 40px;
-        }
-
-        .platform-text {
-            font-size: 1.5em;
-            font-weight: 600;
-            color: #fff;
-        }
-
-        .platform-banner:hover {
-            transform: scale(1.05);
-        }
-
         .portfolio {
             padding: 80px 5%;
             text-align: center;
@@ -137,7 +107,7 @@
             margin-bottom: 20px;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: #4A90E2; /* Azul para os títulos */
+            color: #4A90E2;
         }
 
         .games {
@@ -172,7 +142,7 @@
         .game-card h3 {
             font-size: 1.5em;
             margin: 15px 0 10px;
-            color: #4A90E2; /* Azul no título dos jogos */
+            color: #4A90E2;
         }
 
         .game-card p {
@@ -183,7 +153,7 @@
 
         .game-card a {
             display: inline-block;
-            background: linear-gradient(45deg, #4A90E2, #1A1A1A); /* Gradiente azul */
+            background: linear-gradient(45deg, #4A90E2, #1A1A1A); 
             color: white;
             padding: 12px 20px;
             text-decoration: none;
@@ -247,17 +217,6 @@
         </div>
     </section>
 
-    <section class="platforms">
-        <div class="platform-banner">
-            <img src="platform1.png" alt="Plataforma 1">
-            <div class="platform-text">Jogue no Xbox</div>
-        </div>
-        <div class="platform-banner">
-            <img src="platform2.png" alt="Plataforma 2">
-            <div class="platform-text">Jogue no PlayStation</div>
-        </div>
-    </section>
-
     <section class="portfolio">
         <h2>Explore nossos Jogos</h2>
         <div class="games">
@@ -271,6 +230,12 @@
                 <img src="game2.jpg" alt="Game 2">
                 <h3>Jogo B</h3>
                 <p>Descrição do jogo B.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="game-card">
+                <img src="game3.jpg" alt="Game 3">
+                <h3>Jogo C</h3>
+                <p>Descrição do jogo C.</p>
                 <a href="#">Saiba Mais</a>
             </div>
         </div>
