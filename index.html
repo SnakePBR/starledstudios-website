@@ -12,60 +12,83 @@
             padding: 0;
             background-color: #0A0A0A;
             color: white;
+            text-align: center;
         }
         
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
+            padding: 20px 40px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
         }
-
+        
         .logo {
             width: 150px;
         }
-
-        .brand {
-            font-size: 2em;
-            font-weight: 600;
+        
+        .menu {
+            display: flex;
+            gap: 20px;
         }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 60px 20px;
+        
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+        
+        .menu a:hover {
+            opacity: 0.7;
+        }
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('https://source.unsplash.com/1600x900/?game,technology') center/cover no-repeat;
             text-align: left;
+            padding: 0 10%;
         }
-
-        h1 {
-            font-size: 3em;
+        
+        .hero-text {
+            max-width: 600px;
+        }
+        
+        .hero-text h1 {
+            font-size: 4em;
             font-weight: 600;
             margin-bottom: 10px;
         }
-
-        p {
-            font-size: 1.2em;
-            color: #bbb;
-            margin-bottom: 30px;
+        
+        .hero-text p {
+            font-size: 1.4em;
+            color: #ddd;
         }
-
+        
         .portfolio {
-            margin-top: 60px;
+            padding: 80px 20px;
             text-align: center;
         }
-
+        
         .portfolio h2 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
         }
-
+        
         .games {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 30px;
         }
-
+        
         .game-card {
             background: #1A1A1A;
             width: 320px;
@@ -75,27 +98,27 @@
             transition: transform 0.3s;
             box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
         }
-
+        
         .game-card:hover {
             transform: scale(1.05);
         }
-
+        
         .game-card img {
             width: 100%;
             border-radius: 10px;
         }
-
+        
         .game-card h3 {
             font-size: 1.5em;
             margin: 15px 0 10px;
         }
-
+        
         .game-card p {
             font-size: 1em;
             color: #bbb;
             margin-bottom: 15px;
         }
-
+        
         .game-card a {
             display: inline-block;
             background: linear-gradient(45deg, #ff416c, #ff4b2b);
@@ -106,40 +129,44 @@
             font-size: 1em;
             transition: 0.3s;
         }
-
+        
         .game-card a:hover {
             opacity: 0.85;
         }
-
+        
         footer {
             margin-top: 60px;
             padding: 20px;
             background: #1A1A1A;
             color: #bbb;
             font-size: 0.9em;
-            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="brand">Starled Studios</div>
+    <div class="header">
         <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/Projeto_Criador_de_logotipo_3.png" alt="Starled Studios Logo" class="logo">
-    </header>
-
-    <div class="container">
-        <h1>Bem-vindo à Starled Studios</h1>
-        <p>Desenvolvemos jogos incríveis no Roblox!</p>
+        <div class="menu">
+            <a href="#portfolio">Portfólio</a>
+            <a href="#about">Sobre Nós</a>
+        </div>
     </div>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Construindo o Futuro dos Jogos</h1>
+            <p>Na Starled Studios, criamos experiências imersivas no Roblox que encantam milhões de jogadores.</p>
+        </div>
+    </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2>Nosso Portfólio</h2>
         <div class="games">
             <div class="game-card">
                 <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/1714308831897%20(1).png" alt="EB - Exército Brasileiro">
                 <h3>EB - Exército Brasileiro</h3>
-                <p>Visitas: 100k+</p>
+                <p>Visitas: 100K+</p>
                 <a href="https://www.roblox.com/pt/games/127121345254769/EB-Ex-rcito-Brasileiro" target="_blank">Jogar Agora</a>
             </div>
         </div>
