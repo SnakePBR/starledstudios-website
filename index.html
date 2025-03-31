@@ -5,58 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starled Studios</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            background-color: #0D0D0D; 
-            color: white; 
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            text-align: center;
+            max-width: 900px;
+            margin-top: 50px;
         }
-        .logo { 
-            width: 300px; 
-            margin-top: 50px; 
+        .logo {
+            width: 250px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
         }
         .btn {
             display: inline-block;
             padding: 15px 30px;
             font-size: 18px;
-            background: #4A90E2;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 20px;
+            transition: 0.3s;
         }
-        /* Estilizando o portfólio */
+        .btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
         #portfolio {
-            text-align: center;
-            padding: 50px 20px;
             margin-top: 50px;
+            text-align: center;
         }
         .game {
             display: inline-block;
-            width: 300px;
-            margin: 20px;
+            width: 320px;
+            background: #1e1e1e;
             padding: 20px;
+            margin: 20px;
             border-radius: 10px;
-            background: #1E1E1E;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+        .game:hover {
+            transform: scale(1.05);
         }
         .game img {
             width: 100%;
             border-radius: 10px;
         }
         .game h3 {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .game p {
-            font-size: 18px;
-            color: #ddd;
+            font-size: 16px;
+            color: #bbb;
         }
         .game a {
             display: inline-block;
@@ -80,7 +93,6 @@
         <a href="https://discord.com/users/starledstudios" class="btn">Fale Conosco no Discord</a>
     </div>
 
-    <!-- Portfólio -->
     <section id="portfolio">
         <h2>Nosso Portfólio</h2>
         <div class="game">
