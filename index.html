@@ -12,18 +12,29 @@
             padding: 0;
             background-color: #0A0A0A;
             color: white;
-            text-align: center;
         }
         
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .brand {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 60px 20px;
-        }
-
-        .logo {
-            width: 400px; /* Agora a logo está bem maior */
-            margin-bottom: 20px;
+            text-align: left;
         }
 
         h1 {
@@ -40,6 +51,7 @@
 
         .portfolio {
             margin-top: 60px;
+            text-align: center;
         }
 
         .portfolio h2 {
@@ -105,14 +117,19 @@
             background: #1A1A1A;
             color: #bbb;
             font-size: 0.9em;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <header class="header">
+        <div class="brand">Starled Studios</div>
         <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/Projeto_Criador_de_logotipo_3.png" alt="Starled Studios Logo" class="logo">
-        <h1>Starled Studios</h1>
+    </header>
+
+    <div class="container">
+        <h1>Bem-vindo à Starled Studios</h1>
         <p>Desenvolvemos jogos incríveis no Roblox!</p>
     </div>
 
