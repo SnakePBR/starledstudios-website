@@ -1,231 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starled Studios</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0A0A0A;
-            color: white;
-            text-align: center;
-            overflow-x: hidden;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 5%;
-            position: absolute;
-            width: 90%;
-            top: 0;
-            left: 0;
-        }
-
-        .logo {
-            width: 150px;
-        }
-
-        .menu {
-            display: flex;
-            gap: 20px;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 400;
-            transition: 0.3s;
-        }
-
-        .menu a:hover {
-            opacity: 0.7;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url('https://source.unsplash.com/1600x900/?game,technology') center/cover no-repeat;
-            text-align: left;
-            padding: 0 10%;
-            width: 100%;
-        }
-
-        .hero-text {
-            max-width: 600px;
-        }
-
-        .hero-text h1 {
-            font-size: 4em;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .hero-text p {
-            font-size: 1.4em;
-            color: #ddd;
-        }
-
-        .portfolio {
-            padding: 80px 5%;
-            text-align: center;
-        }
-
-        .portfolio h2 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .games {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .game-card {
-            background: #1A1A1A;
-            width: 320px;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s;
-            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
-        }
-
-        .game-card:hover {
-            transform: scale(1.05);
-        }
-
-        .game-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .game-card h3 {
-            font-size: 1.5em;
-            margin: 15px 0 10px;
-        }
-
-        .game-card p {
-            font-size: 1em;
-            color: #bbb;
-            margin-bottom: 15px;
-        }
-
-        .game-card a {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1em;
-            transition: 0.3s;
-        }
-
-        .game-card a:hover {
-            opacity: 0.85;
-        }
-
-        .platforms {
-            padding: 80px 5%;
-            background-color: #1A1A1A;
-            text-align: center;
-        }
-
-        .platforms h2 {
-            font-size: 3em;
-            margin-bottom: 40px;
-            color: white;
-        }
-
-        .platform-banner {
-            background-color: black;
-            display: inline-block;
-            padding: 20px 50px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2em;
-            color: white;
-        }
-
-        .platform-banner img {
-            margin: 0 15px;
-            vertical-align: middle;
-            height: 40px;
-        }
-
-        .footer {
-            margin-top: 60px;
-            padding: 20px;
-            background: #1A1A1A;
-            color: #bbb;
-            font-size: 0.9em;
-            width: 100%;
-        }
-
-        /* Estilo para o nome "Plataforma Parceiras" */
-        .platforms h2 span {
-            display: block;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/Projeto_Criador_de_logotipo_3.png" alt="Starled Studios Logo" class="logo">
-        <div class="menu">
-            <a href="#portfolio">Portfólio</a>
-            <a href="#about">Sobre Nós</a>
-        </div>
+<section class="platforms">
+    <div class="platform-banner">
+        <span>Plataforma Parceiras</span>
+        <img src="https://cdn.prod.website-files.com/66d5d0b5c396cb4aa3d8f820/66de1c032bd368e43720c890_Roblox%20White.png" alt="Roblox">
     </div>
+</section>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Construindo o Futuro dos Jogos</h1>
-            <p>Na Starled Studios, criamos experiências imersivas no Roblox que encantam milhões de jogadores.</p>
-        </div>
-    </section>
+<style>
+    .platforms {
+        padding: 80px 5%;
+        background-color: #1A1A1A;
+        text-align: center;
+    }
 
-    <section class="portfolio" id="portfolio">
-        <h2>Nosso Portfólio</h2>
-        <div class="games">
-            <div class="game-card">
-                <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/1714308831897%20(1).png" alt="EB - Exército Brasileiro">
-                <h3>EB - Exército Brasileiro</h3>
-                <p>Visitas: 100K+</p>
-                <a href="https://www.roblox.com/pt/games/127121345254769/EB-Ex-rcito-Brasileiro" target="_blank">Jogar Agora</a>
-            </div>
-        </div>
-    </section>
+    .platform-banner {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 50px;
+        border-radius: 10px;
+        font-size: 2em;
+        color: white;
+        gap: 20px;
+    }
 
-    <section class="platforms">
-        <h2><span>Plataforma</span>Parceiras</h2>
-        <div class="platform-banner">
-            <img src="https://cdn.prod.website-files.com/66d5d0b5c396cb4aa3d8f820/66de1c032bd368e43720c890_Roblox%20White.png" alt="Roblox">
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2025 Starled Studios. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
+    .platform-banner img {
+        height: 40px;
+    }
+</style>
