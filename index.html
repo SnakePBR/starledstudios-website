@@ -16,7 +16,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0A0A50, #A0CFFF);
+            background: linear-gradient(135deg, #1E3A8A, #60A5FA);
             color: white;
             text-align: center;
             overflow-x: hidden;
@@ -28,12 +28,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 5%;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-            transition: all 0.3s;
-            background: linear-gradient(135deg, #003366, #66A3FF);
+            background: linear-gradient(135deg, #1E40AF, #93C5FD);
         }
 
         .logo {
@@ -63,93 +58,61 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.6), rgba(96, 165, 250, 0.3)), url('https://source.unsplash.com/1600x900/?game,technology') center/cover no-repeat;
             text-align: left;
             padding: 0 10%;
             width: 100%;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, #003366, #66A3FF);
-        }
-
-        .hero-text {
-            max-width: 600px;
-            z-index: 2;
         }
 
         .hero-text h1 {
             font-size: 4em;
             font-weight: 600;
-            margin-bottom: 10px;
-            animation: fadeIn 1s ease-in-out;
+            color: #ffffff;
         }
 
         .hero-text p {
             font-size: 1.4em;
-            color: #E0EFFF;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        .platforms {
-            padding: 60px 5%;
-            text-align: center;
-            background: linear-gradient(135deg, #002244, #66A3FF);
-        }
-
-        .platform-banner {
-            background-color: #225599;
-            padding: 20px 50px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-            background: linear-gradient(135deg, #003366, #66A3FF);
-        }
-
-        .platform-text {
-            font-size: 1.5em;
-            font-weight: 600;
-            color: white;
+            color: #E0F2FE;
         }
 
         .portfolio {
             padding: 80px 5%;
             text-align: center;
-            width: 100%;
-            background: linear-gradient(135deg, #002244, #66A3FF);
+            background: linear-gradient(135deg, #1E40AF, #93C5FD);
         }
 
         .portfolio h2 {
             font-size: 3em;
             margin-bottom: 20px;
+            letter-spacing: 2px;
             text-transform: uppercase;
         }
 
         .game-card {
-            background: linear-gradient(135deg, #003366, #66A3FF);
+            background: #1E3A8A;
             width: 320px;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            transition: transform 0.3s;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .game-card h3 {
+            color: #ffffff;
         }
 
         footer {
-            margin-top: 60px;
             padding: 20px;
-            background: #003366;
-            color: #E0EFFF;
+            background: #1E3A8A;
+            color: #E0F2FE;
             font-size: 0.9em;
             width: 100%;
         }
     </style>
 </head>
 <body>
-
     <div class="header">
-        <img src="logo.png" alt="Starled Studios Logo" class="logo">
+        <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/Projeto_Criador_de_logotipo_3.png" alt="Starled Studios Logo" class="logo">
         <div class="menu">
             <a href="#portfolio">Portfólio</a>
             <a href="#about">Sobre Nós</a>
@@ -166,16 +129,15 @@
     <section class="portfolio" id="portfolio">
         <h2>Nosso Portfólio</h2>
         <div class="game-card">
-            <img src="game.png" alt="EB - Exército Brasileiro">
+            <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/1714308831897%20(1).png" alt="EB - Exército Brasileiro">
             <h3>EB - Exército Brasileiro</h3>
             <p>Visitas: 100K+</p>
-            <a href="#">Jogar Agora</a>
+            <a href="https://www.roblox.com/pt/games/127121345254769/EB-Ex-rcito-Brasileiro" target="_blank">Jogar Agora</a>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Starled Studios. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
