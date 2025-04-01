@@ -16,7 +16,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #002855, #004AAD);
+            background: linear-gradient(135deg, #0A0A50, #A0CFFF);
             color: white;
             text-align: center;
             overflow-x: hidden;
@@ -28,17 +28,28 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 5%;
-            background: linear-gradient(135deg, #001F3F, #0056b3);
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            transition: all 0.3s;
+            background: linear-gradient(135deg, #003366, #66A3FF);
         }
 
         .logo {
             width: 150px;
         }
 
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
         .menu a {
             color: white;
             text-decoration: none;
             font-size: 1.2em;
+            font-weight: 400;
             transition: 0.3s;
         }
 
@@ -54,56 +65,91 @@
             justify-content: center;
             text-align: left;
             padding: 0 10%;
-            background: linear-gradient(135deg, rgba(0, 40, 85, 0.6), rgba(0, 74, 173, 0.3)), url('https://source.unsplash.com/1600x900/?game,technology') center/cover no-repeat;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #003366, #66A3FF);
+        }
+
+        .hero-text {
+            max-width: 600px;
+            z-index: 2;
         }
 
         .hero-text h1 {
             font-size: 4em;
             font-weight: 600;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero-text p {
+            font-size: 1.4em;
+            color: #E0EFFF;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         .platforms {
             padding: 60px 5%;
-            background: linear-gradient(135deg, #003366, #0073e6);
+            text-align: center;
+            background: linear-gradient(135deg, #002244, #66A3FF);
         }
 
         .platform-banner {
-            background: linear-gradient(135deg, #002855, #0056b3);
+            background-color: #225599;
             padding: 20px 50px;
             border-radius: 10px;
+            transition: transform 0.3s ease;
+            background: linear-gradient(135deg, #003366, #66A3FF);
+        }
+
+        .platform-text {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: white;
         }
 
         .portfolio {
             padding: 80px 5%;
-            background: linear-gradient(135deg, #004AAD, #0066CC);
+            text-align: center;
+            width: 100%;
+            background: linear-gradient(135deg, #002244, #66A3FF);
+        }
+
+        .portfolio h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
         .game-card {
-            background: linear-gradient(135deg, #003366, #0073e6);
+            background: linear-gradient(135deg, #003366, #66A3FF);
             width: 320px;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
-        }
-
-        .game-card a {
-            background: linear-gradient(45deg, #00A6FF, #0066CC);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
         }
 
         footer {
             margin-top: 60px;
             padding: 20px;
-            background: #002244;
-            color: #bbb;
+            background: #003366;
+            color: #E0EFFF;
+            font-size: 0.9em;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+
     <div class="header">
-        <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/Projeto_Criador_de_logotipo_3.png" alt="Starled Studios Logo" class="logo">
+        <img src="logo.png" alt="Starled Studios Logo" class="logo">
         <div class="menu">
             <a href="#portfolio">Portfólio</a>
             <a href="#about">Sobre Nós</a>
@@ -113,26 +159,17 @@
     <section class="hero">
         <div class="hero-text">
             <h1>Construindo o Futuro dos Jogos</h1>
-            <p>Somos a Starled Studios, criando experiências imersivas no Roblox.</p>
-        </div>
-    </section>
-
-    <section class="platforms">
-        <div class="platform-banner">
-            <span class="platform-text">Plataformas Parceiras</span>
-            <img src="https://cdn.prod.website-files.com/66d5d0b5c396cb4aa3d8f820/66de1c032bd368e43720c890_Roblox%20White.png" alt="Roblox">
+            <p>Nós, da Starled Studios, criamos experiências imersivas no Roblox.</p>
         </div>
     </section>
 
     <section class="portfolio" id="portfolio">
         <h2>Nosso Portfólio</h2>
-        <div class="games">
-            <div class="game-card">
-                <img src="https://raw.githubusercontent.com/SnakePBR/starledstudios-website/main/1714308831897%20(1).png" alt="EB - Exército Brasileiro">
-                <h3>EB - Exército Brasileiro</h3>
-                <p>Visitas: 100K+</p>
-                <a href="https://www.roblox.com/pt/games/127121345254769/EB-Ex-rcito-Brasileiro" target="_blank">Jogar Agora</a>
-            </div>
+        <div class="game-card">
+            <img src="game.png" alt="EB - Exército Brasileiro">
+            <h3>EB - Exército Brasileiro</h3>
+            <p>Visitas: 100K+</p>
+            <a href="#">Jogar Agora</a>
         </div>
     </section>
 
@@ -140,8 +177,5 @@
         <p>&copy; 2025 Starled Studios. Todos os direitos reservados.</p>
     </footer>
 
-    <a href="https://discord.gg/MjruuMnYFh" class="contact">
-        <img src="https://media.discordapp.net/attachments/1200932298426683542/1356392725758607562/pngegg.png?format=webp&quality=lossless&width=625&height=625" alt="Discord">
-    </a>
 </body>
 </html>
